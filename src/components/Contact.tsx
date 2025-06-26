@@ -45,19 +45,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'john@example.com',
-      link: 'mailto:john@example.com'
+      value: 'rudra.010402@gmail.com',
+      link: 'mailto:rudra.010402@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+91-9555400877',
+      link: 'tel:+91-9555400877'
     },
     {
       icon: MapPin,
-      title: 'Location',
-      value: 'San Francisco, CA',
+      title: 'Location (Current)',
+      value: 'Ghaziabad, Uttar Pradesh, India',
       link: '#'
     }
   ];
@@ -66,25 +66,19 @@ const Contact = () => {
     {
       icon: Github,
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/rudra-140207',
       color: 'hover:text-gray-300'
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'https://linkedin.com/in/rudra07',
       color: 'hover:text-blue-400'
-    },
-    {
-      icon: Twitter,
-      name: 'Twitter',
-      url: 'https://twitter.com',
-      color: 'hover:text-sky-400'
     },
     {
       icon: Mail,
       name: 'Email',
-      url: 'mailto:john@example.com',
+      url: 'mailto:rudra.010402@gmail.com',
       color: 'hover:text-red-400'
     }
   ];
@@ -191,6 +185,15 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
+            <div className="p-6 bg-gray-900/50 rounded-xl border border-gray-700">
+              <h4 className="text-lg font-semibold mb-2">Quick Facts</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>🚀 Available for freelance projects</li>
+                <li>⏰ Typical response time: 6 hours</li>
+                <li>🌍 Open to remote collaborations</li>
+                <li>💼 Currently seeking new opportunities</li>
+              </ul>
+            </div>
             <div>
               <h3 className="text-2xl font-bold mb-6">Let's connect</h3>
               <p className="text-gray-400 mb-8 leading-relaxed">
@@ -232,16 +235,6 @@ const Contact = () => {
                   </a>
                 ))}
               </div>
-            </div>
-
-            <div className="p-6 bg-gray-900/50 rounded-xl border border-gray-700">
-              <h4 className="text-lg font-semibold mb-2">Quick Facts</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>🚀 Available for freelance projects</li>
-                <li>⏰ Typical response time: 24 hours</li>
-                <li>🌍 Open to remote collaborations</li>
-                <li>💼 Currently seeking new opportunities</li>
-              </ul>
             </div>
           </div>
         </div>

@@ -131,7 +131,7 @@ const Hero = () => {
           
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/rudra-140207"
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 glass rounded-full transition-all duration-300 hover-lift hover-glow border border-red-400/10"
@@ -139,7 +139,7 @@ const Hero = () => {
               <Github className="w-6 h-6 text-red-200 group-hover:text-white transition-colors" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/rudra07"
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 glass rounded-full transition-all duration-300 hover-lift hover-glow border border-red-400/10"

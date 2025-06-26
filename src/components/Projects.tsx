@@ -95,12 +95,12 @@ const Projects = () => {
             My <span className="bg-gradient-to-r from-red-400 to-orange-500 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-red-200 max-w-3xl mx-auto">
-            A showcase of my latest work in full-stack development and competitive programming solutions
+            A showcase of my work in Web Dev
           </p>
         </div>
 
         {/* Featured Projects */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center text-red-100">Featured Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project) => (
@@ -157,7 +157,7 @@ const Projects = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Project Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">

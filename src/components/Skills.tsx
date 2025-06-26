@@ -154,7 +154,7 @@ const Skills = () => {
         <div className="mt-16 text-center">
           <div className="grid md:grid-cols-4 gap-6">
             <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-red-600/50 transition-colors">
-              <div className="text-3xl font-bold text-red-400 mb-2">3+</div>
+              <div className="text-3xl font-bold text-red-400 mb-2">1+</div>
               <div className="text-gray-400">Years Experience</div>
             </div>
             <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-orange-500/50 transition-colors">

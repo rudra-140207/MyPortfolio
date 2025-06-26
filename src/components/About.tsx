@@ -5,7 +5,7 @@ const About = () => {
   const stats = [
     {
       icon: Code,
-      number: '3+',
+      number: '1+',
       label: 'Years Experience',
       color: 'text-red-400',
       bgColor: 'from-red-500/20 to-red-600/10'
@@ -20,7 +20,7 @@ const About = () => {
     {
       icon: Coffee,
       number: '1000+',
-      label: 'Cups of Coffee',
+      label: 'Cups of Tea',
       color: 'text-orange-400',
       bgColor: 'from-orange-500/20 to-orange-600/10'
     },
@@ -34,7 +34,7 @@ const About = () => {
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-b from-red-900 to-gray-900 relative overflow-hidden">
+    <div className="py-20 relative overflow-hidden">
       {/* Floating decorative elements */}
       <div className="absolute top-10 right-10 animate-float opacity-20">
         <Sparkles className="w-12 h-12 text-red-400" />
@@ -62,24 +62,19 @@ const About = () => {
           <div className="space-y-8">
             <div className="glass-dark rounded-2xl p-8 border border-red-400/10 hover-lift">
               <p className="text-lg text-red-100 leading-relaxed mb-6">
-                I'm Rudra Pratap Singh, a passionate full-stack developer currently pursuing my Bachelor's 
-                of Technology from KIET Group of Institutions, Ghaziabad. With hands-on experience in 
-                modern web technologies and competitive programming, I love creating innovative solutions.
+                I'm Rudra Pratap Singh, a driven full-stack developer and tech enthusiast, currently pursuing my B.Tech at KIET Group of Institutions, Ghaziabad. With a strong foundation in the MERN stack and a passion for competitive programming, I thrive on building impactful web applications and solving algorithmic challenges.
               </p>
               
               <p className="text-lg text-red-100 leading-relaxed mb-6">
-                My journey includes working as an intern at IR-Collab by R-Cube Green Technology LLP, 
-                where I developed dynamic admin dashboards and real-time analytics systems. I've also 
-                gained valuable experience at SARACA Solutions, working on RESTful APIs and backend optimization.
+                I’ve interned at IR-Collab (R-Cube Green Technology LLP), where I built real-time admin dashboards and analytics systems, and at SARACA Solutions, where I focused on designing RESTful APIs and optimizing backend systems.
               </p>
 
               <p className="text-lg text-red-100 leading-relaxed">
-                When I'm not coding, you'll find me solving competitive programming problems on platforms 
-                like LeetCode and CodeChef, where I've achieved significant rankings and solved 450+ problems.
+                Outside of development, I actively engage in competitive coding on platforms like LeetCode and CodeChef, with over 450+ problems solved and consistent top-tier rankings. I'm always eager to learn, explore new technologies, and build products that make a difference.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            {/* <div className="flex flex-wrap gap-4">
               <span className="px-6 py-3 gradient-border rounded-full text-red-300 text-sm font-medium hover-glow transition-all duration-300">
                 React.js
               </span>
@@ -92,7 +87,7 @@ const About = () => {
               <span className="px-6 py-3 gradient-border rounded-full text-amber-300 text-sm font-medium hover-glow transition-all duration-300">
                 Express.js
               </span>
-            </div>
+            </div> */}
           </div>
 
           <div className="grid grid-cols-2 gap-6">

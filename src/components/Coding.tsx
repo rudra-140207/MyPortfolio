@@ -182,7 +182,7 @@ const Coding = () => {
         </div>
 
         {/* Recent Activity */}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h3 className="text-2xl font-bold mb-8 flex items-center gap-2">
             <Clock className="w-6 h-6 text-green-400" />
             Recent Activity
@@ -207,7 +207,7 @@ const Coding = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
