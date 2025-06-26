@@ -85,7 +85,7 @@ const Projects = () => {
     ? projects 
     : projects.filter(project => project.category === filter);
 
-  const featuredProjects = projects.filter(project => project.featured);
+  // const featuredProjects = projects.filter(project => project.featured);
 
   return (
     <div className="py-20 bg-gradient-to-b from-gray-900 to-red-900">

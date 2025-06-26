@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Code, Database, Server, Palette, Cpu, Globe } from 'lucide-react';
+import { Code, Database, Server, Cpu, Globe } from 'lucide-react';
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('frontend');

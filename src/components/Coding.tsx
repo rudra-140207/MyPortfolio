@@ -1,5 +1,5 @@
 
-import { Trophy, Target, Clock, Award, Star, Calendar } from 'lucide-react';
+import { Trophy, Target, Award, Star, Calendar } from 'lucide-react';
 
 const Coding = () => {
   const platforms = [
