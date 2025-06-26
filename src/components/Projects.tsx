@@ -9,69 +9,69 @@ const Projects = () => {
     {
       id: 1,
       title: 'APIverse',
-      description: 'MongoDB, ExpressJs, ReactJs, NodeJs, Tailwind CSS - Engineered a user-friendly interface enabling seamless registration and API key generation.',
+      description: 'Engineered a user-friendly interface enabling seamless API management and API key generation.',
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop',
       technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS'],
       category: 'fullstack',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/rudra-140207/APIverse-Frontend',
+      liveUrl: 'https://apiverse-07.onrender.com',
       featured: true
     },
     {
       id: 2,
       title: 'Auth-App',
-      description: 'Next.Js, MongoDB, Shaden - Implemented secure token generation and validation flows for email verification and password resets.',
+      description: 'Implemented secure token generation and validation flows for email verification and password resets.',
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop',
       technologies: ['Next.js', 'MongoDB', 'Shadcn', 'JWT'],
-      category: 'fullstack',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      category: 'backend',
+      githubUrl: 'https://github.com/rudra-140207/Auth-NextJs',
+      liveUrl: 'https://auth-next-07.vercel.app',
       featured: true
     },
     {
       id: 3,
       title: 'Crypto Galaxy',
-      description: 'ReactJs, API, MaterialUI - All-in-one destination for navigating the world of cryptocurrency with real-time access to multiple cryptocurrency coins.',
-      image: 'https://images.unsplash.com/photo-1518544866727-e2bb9e00b1b3?w=600&h=400&fit=crop',
+      description: 'All-in-one destination for navigating the world of cryptocurrency with real-time access to multiple cryptocurrency coins.',
+      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop',
       technologies: ['React.js', 'Material-UI', 'Cryptocurrency API'],
       category: 'frontend',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/rudra-140207/Crypto_Galaxy',
+      liveUrl: 'https://crypto-galaxy-07.onrender.com',
       featured: true
     },
-    {
-      id: 4,
-      title: 'Admin Dashboard',
-      description: 'Dynamic admin dashboard with real-time analytics and content management for seamless monitoring of 1000+ posts daily.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      technologies: ['React.js', 'Node.js', 'Socket.io', 'Charts.js'],
-      category: 'fullstack',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'RESTful API Service',
-      description: 'Scalable backend service with optimized platform performance handling over 10,000 API calls daily.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
-      technologies: ['Node.js', 'Express.js', 'MongoDB', 'Redis'],
-      category: 'backend',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'Portfolio Website',
-      description: 'Responsive portfolio website with smooth animations and modern design using latest web technologies.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
-      technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      category: 'frontend',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: false
-    }
+    // {
+    //   id: 4,
+    //   title: 'Admin Dashboard',
+    //   description: 'Dynamic admin dashboard with real-time analytics and content management for seamless monitoring of 1000+ posts daily.',
+    //   image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    //   technologies: ['React.js', 'Node.js', 'Socket.io', 'Charts.js'],
+    //   category: 'fullstack',
+    //   githubUrl: 'https://github.com',
+    //   liveUrl: 'https://example.com',
+    //   featured: false
+    // },
+    // {
+    //   id: 5,
+    //   title: 'RESTful API Service',
+    //   description: 'Scalable backend service with optimized platform performance handling over 10,000 API calls daily.',
+    //   image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
+    //   technologies: ['Node.js', 'Express.js', 'MongoDB', 'Redis'],
+    //   category: 'backend',
+    //   githubUrl: 'https://github.com',
+    //   liveUrl: 'https://example.com',
+    //   featured: false
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Portfolio Website',
+    //   description: 'Responsive portfolio website with smooth animations and modern design using latest web technologies.',
+    //   image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
+    //   technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    //   category: 'frontend',
+    //   githubUrl: 'https://github.com',
+    //   liveUrl: 'https://example.com',
+    //   featured: false
+    // }
   ];
 
   const categories = [
