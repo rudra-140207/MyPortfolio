@@ -157,10 +157,10 @@ const Skills = () => {
               <div className="text-3xl font-bold text-red-400 mb-2">1+</div>
               <div className="text-gray-400">Years Experience</div>
             </div>
-            <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-orange-500/50 transition-colors">
+            {/* <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-orange-500/50 transition-colors">
               <div className="text-3xl font-bold text-orange-400 mb-2">223rd</div>
               <div className="text-gray-400">CodeChef Rank</div>
-            </div>
+            </div> */}
             <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-yellow-600/50 transition-colors">
               <div className="text-3xl font-bold text-yellow-600 mb-2">450+</div>
               <div className="text-gray-400">Problems Solved</div>

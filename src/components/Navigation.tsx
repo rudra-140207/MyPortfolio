@@ -73,7 +73,7 @@ const Navigation = ({ activeSection }: NavigationProps) => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 glass-dark border-b border-red-400/10">
+        <div className="md:hidden absolute top-full left-0 right-0 border-b border-red-400 bg-black/80">
           <div className="px-2 pt-2 pb-3 space-y-2 sm:px-3">
             {navItems.map((item, index) => (
               <button

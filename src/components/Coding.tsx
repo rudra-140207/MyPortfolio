@@ -5,54 +5,54 @@ const Coding = () => {
   const platforms = [
     {
       name: 'LeetCode',
-      username: 'johndoe',
-      rating: 1847,
-      rank: 'Expert',
-      problemsSolved: 650,
-      contestsParticipated: 45,
+      username: 'rudra_010402',
+      rating: 1984,
+      rank: 'Knight',
+      problemsSolved: 347,
+      contestsParticipated: 46,
       color: 'from-orange-500 to-yellow-500',
       bgColor: 'bg-orange-500/10',
       borderColor: 'border-orange-500/30'
     },
-    {
-      name: 'Codeforces',
-      username: 'john_doe',
-      rating: 1654,
-      rank: 'Specialist',
-      problemsSolved: 420,
-      contestsParticipated: 32,
-      color: 'from-blue-500 to-cyan-500',
-      bgColor: 'bg-blue-500/10',
-      borderColor: 'border-blue-500/30'
-    },
+    // {
+    //   name: 'Codeforces',
+    //   username: 'john_doe',
+    //   rating: 1654,
+    //   rank: 'Specialist',
+    //   problemsSolved: 420,
+    //   contestsParticipated: 32,
+    //   color: 'from-blue-500 to-cyan-500',
+    //   bgColor: 'bg-blue-500/10',
+    //   borderColor: 'border-blue-500/30'
+    // },
     {
       name: 'CodeChef',
-      username: 'johndoe123',
-      rating: 1789,
-      rank: '4 Star',
-      problemsSolved: 380,
-      contestsParticipated: 28,
+      username: 'rudra_0142',
+      rating: 1610,
+      rank: '3 Star',
+      problemsSolved: 18,
+      contestsParticipated: 7,
       color: 'from-purple-500 to-pink-500',
       bgColor: 'bg-purple-500/10',
       borderColor: 'border-purple-500/30'
     },
-    {
-      name: 'AtCoder',
-      username: 'john_d',
-      rating: 1456,
-      rank: 'Blue',
-      problemsSolved: 285,
-      contestsParticipated: 18,
-      color: 'from-green-500 to-emerald-500',
-      bgColor: 'bg-green-500/10',
-      borderColor: 'border-green-500/30'
-    }
+    // {
+    //   name: 'AtCoder',
+    //   username: 'john_d',
+    //   rating: 1456,
+    //   rank: 'Blue',
+    //   problemsSolved: 285,
+    //   contestsParticipated: 18,
+    //   color: 'from-green-500 to-emerald-500',
+    //   bgColor: 'bg-green-500/10',
+    //   borderColor: 'border-green-500/30'
+    // }
   ];
 
   const achievements = [
     {
-      title: 'Global Rank 156',
-      description: 'LeetCode Weekly Contest #387',
+      title: 'Global Rank 415',
+      description: 'LeetCode BiWeekly Contest #148',
       icon: Trophy,
       date: '2024',
       color: 'text-yellow-400'
@@ -65,29 +65,29 @@ const Coding = () => {
       color: 'text-green-400'
     },
     {
-      title: 'Expert Rating',
-      description: 'Achieved expert level on LeetCode',
+      title: 'Knight Badge',
+      description: 'Achieved Knight Badge on LeetCode',
       icon: Star,
-      date: '2023',
+      date: '2024',
       color: 'text-blue-400'
     },
-    {
-      title: 'ICPC Participant',
-      description: 'International Collegiate Programming Contest',
-      icon: Award,
-      date: '2023',
-      color: 'text-purple-400'
-    }
+    // {
+    //   title: 'ICPC Participant',
+    //   description: 'International Collegiate Programming Contest',
+    //   icon: Award,
+    //   date: '2023',
+    //   color: 'text-purple-400'
+    // }
   ];
 
-  const skills = [
-    { name: 'Data Structures', level: 90 },
-    { name: 'Algorithms', level: 85 },
-    { name: 'Dynamic Programming', level: 80 },
-    { name: 'Graph Theory', level: 75 },
-    { name: 'Greedy Algorithms', level: 85 },
-    { name: 'Tree Algorithms', level: 80 }
-  ];
+  // const skills = [
+  //   { name: 'Data Structures', level: 90 },
+  //   { name: 'Algorithms', level: 85 },
+  //   { name: 'Dynamic Programming', level: 80 },
+  //   { name: 'Graph Theory', level: 75 },
+  //   { name: 'Greedy Algorithms', level: 85 },
+  //   { name: 'Tree Algorithms', level: 80 }
+  // ];
 
   return (
     <div className="py-20 bg-gray-800/50">
@@ -157,7 +157,7 @@ const Coding = () => {
           </div>
 
           {/* Skills */}
-          <div>
+          {/* <div>
             <h3 className="text-2xl font-bold mb-8 flex items-center gap-2">
               <Target className="w-6 h-6 text-blue-400" />
               Problem Solving Skills
@@ -178,7 +178,7 @@ const Coding = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Recent Activity */}
