@@ -1,22 +1,23 @@
-
-import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
-import { useToast } from '../hooks/use-toast';
+import { useState } from "react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { useToast } from "../hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -25,7 +26,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     toast({
       title: "Message sent!",
@@ -33,10 +34,10 @@ const Contact = () => {
     });
 
     setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     });
     setIsSubmitting(false);
   };
@@ -44,43 +45,43 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
-      value: 'rudra.010402@gmail.com',
-      link: 'mailto:rudra.010402@gmail.com'
+      title: "Email",
+      value: "rudra.010402@gmail.com",
+      link: "mailto:rudra.010402@gmail.com",
     },
     {
       icon: Phone,
-      title: 'Phone',
-      value: '+91-9555400877',
-      link: 'tel:+91-9555400877'
+      title: "Phone",
+      value: "+91-9555400877",
+      link: "tel:+91-9555400877",
     },
     {
       icon: MapPin,
-      title: 'Location (Current)',
-      value: 'Ghaziabad, Uttar Pradesh, India',
-      link: '#'
-    }
+      title: "Location (Current)",
+      value: "Ghaziabad, Uttar Pradesh, India",
+      link: "#",
+    },
   ];
 
   const socialLinks = [
     {
       icon: Github,
-      name: 'GitHub',
-      url: 'https://github.com/rudra-140207',
-      color: 'hover:text-gray-300'
+      name: "GitHub",
+      url: "https://github.com/rudra-140207",
+      color: "hover:text-gray-300",
     },
     {
       icon: Linkedin,
-      name: 'LinkedIn',
-      url: 'https://linkedin.com/in/rudra07',
-      color: 'hover:text-blue-400'
+      name: "LinkedIn",
+      url: "https://linkedin.com/in/rudra07",
+      color: "hover:text-blue-400",
     },
     {
       icon: Mail,
-      name: 'Email',
-      url: 'mailto:rudra.010402@gmail.com',
-      color: 'hover:text-red-400'
-    }
+      name: "Email",
+      url: "mailto:rudra.010402@gmail.com",
+      color: "hover:text-red-400",
+    },
   ];
 
   return (
@@ -88,22 +89,68 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Get In <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Touch</span>
+            Get In{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Touch
+            </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+            Have a project in mind? Let's discuss how we can work together to
+            bring your ideas to life.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <div className="p-6 bg-gray-900/50 rounded-xl border border-gray-700">
+              <h4 className="text-lg font-semibold mb-2">Quick Facts</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>🚀 Available for freelance projects</li>
+                <li>⏰ Typical response time: 6 hours</li>
+                <li>🌍 Open to remote collaborations</li>
+                <li>💼 Currently seeking new opportunities</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Let's connect</h3>
+              <p className="text-gray-400 mb-8 leading-relaxed">
+                I'm always open to discussing new opportunities, creative ideas,
+                or potential collaborations. Whether you have a project in mind
+                or just want to chat about technology, feel free to reach out!
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              {contactInfo.map((info, index) => (
+                <a
+                  key={index}
+                  href={info.link}
+                  className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg border border-gray-700 hover:border-gray-600 transition-all duration-300 hover:transform hover:scale-105"
+                >
+                  <div className="p-3 bg-blue-600/20 rounded-full text-blue-400">
+                    <info.icon className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">{info.title}</h4>
+                    <p className="text-gray-400">{info.value}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+
           {/* Contact Form */}
-          <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700">
+          <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-700">
             <h3 className="text-2xl font-bold mb-6">Send me a message</h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Name
                   </label>
                   <input
@@ -118,7 +165,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Email
                   </label>
                   <input
@@ -135,7 +185,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -151,7 +204,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -181,47 +237,9 @@ const Contact = () => {
                 )}
               </button>
             </form>
-          </div>
-
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="p-6 bg-gray-900/50 rounded-xl border border-gray-700">
-              <h4 className="text-lg font-semibold mb-2">Quick Facts</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>🚀 Available for freelance projects</li>
-                <li>⏰ Typical response time: 6 hours</li>
-                <li>🌍 Open to remote collaborations</li>
-                <li>💼 Currently seeking new opportunities</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Let's connect</h3>
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                I'm always open to discussing new opportunities, creative ideas, or potential collaborations. 
-                Whether you have a project in mind or just want to chat about technology, feel free to reach out!
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              {contactInfo.map((info, index) => (
-                <a
-                  key={index}
-                  href={info.link}
-                  className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg border border-gray-700 hover:border-gray-600 transition-all duration-300 hover:transform hover:scale-105"
-                >
-                  <div className="p-3 bg-blue-600/20 rounded-full text-blue-400">
-                    <info.icon className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">{info.title}</h4>
-                    <p className="text-gray-400">{info.value}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-4">Follow me</h4>
+              <h4 className="text-lg font-semibold mt-4 mb-2">Follow me</h4>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (
                   <a
