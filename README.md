@@ -4,7 +4,7 @@ A modern, responsive, and detailed portfolio website built using **Vite**, **Rea
 
 ## 🖥️ Live Preview
 
-[🌐 View Live Site]()Deployed Link will be available soon 
+[🌐 View Live Site](https://rudrapratapsingh.me)
 
 ---
 
