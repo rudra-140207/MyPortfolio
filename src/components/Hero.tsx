@@ -9,6 +9,9 @@ import {
 } from "lucide-react";
 
 const Hero = () => {
+
+  const resumeDriveLink = "https://drive.google.com/file/d/1kE4tTX16lpsWL-bWjHqmEjeD_Sf6cSLk/view?usp=sharing"
+
   const scrollToAbout = () => {
     const element = document.getElementById("about");
     if (element) {
@@ -92,7 +95,7 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-16 animate-slide-up">
           <a
-            href="https://drive.google.com/file/d/1aZ4av9Ka4Tylj3pF7OMOk7xskHvr8wnG/view?usp=drivesdk"
+            href={resumeDriveLink}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-block overflow-hidden bg-gradient-to-r from-red-600 via-orange-600 to-yellow-600 hover:from-red-700 hover:via-orange-700 hover:to-yellow-700 text-white font-bold py-5 px-10 rounded-full transition-all duration-500 transform hover:scale-105 hover-lift neon-red"
