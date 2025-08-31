@@ -2,7 +2,6 @@ import { Code, Coffee, Trophy, Users, Sparkles, Zap } from "lucide-react";
 import { useState } from "react";
 
 const About = () => {
-
   const [expanded, setExpanded] = useState(false);
   const stats = [
     {
@@ -28,7 +27,7 @@ const About = () => {
     },
     {
       icon: Users,
-      number: "10+",
+      number: "15+",
       label: "Projects Completed",
       color: "text-amber-400",
       bgColor: "from-amber-500/20 to-amber-600/10",
@@ -69,27 +68,25 @@ const About = () => {
             <div className="glass-dark rounded-2xl p-8 border border-red-400/10 hover-lift">
               <p className="text-lg text-red-100 leading-relaxed mb-6">
                 I'm Rudra Pratap Singh, a driven full-stack developer and tech
-                enthusiast, currently pursuing my B.Tech at KIET Group of
-                Institutions, Ghaziabad. With a strong foundation in the MERN
-                stack and a passion for competitive programming, I thrive on
-                building impactful web applications and solving algorithmic
-                challenges.
+                enthusiast pursuing B.Tech at KIET Group of Institutions,
+                Ghaziabad. With expertise in the MERN stack and a passion for
+                competitive programming, I specialize in building impactful web
+                applications and solving complex algorithmic challenges.
               </p>
 
               {/* Hidden content on small screens unless expanded */}
               <div className={`${expanded ? "" : "hidden"} sm:block`}>
                 <p className="text-lg text-red-100 leading-relaxed mb-6">
-                  I’ve interned at IR-Collab (R-Cube Green Technology LLP),
-                  where I built real-time admin dashboards and analytics
-                  systems, and at SARACA Solutions, where I focused on designing
-                  RESTful APIs and optimizing backend systems.
+                  I've gained hands-on experience developing real-time admin
+                  dashboards, analytics systems, and RESTful APIs while
+                  optimizing backend performance. As an active competitive
+                  programmer with 450+ problems solved across LeetCode and
+                  CodeChef, I consistently achieve top-tier rankings.
                 </p>
                 <p className="text-lg text-red-100 leading-relaxed">
-                  Outside of development, I actively engage in competitive
-                  coding on platforms like LeetCode and CodeChef, with over 450+
-                  problems solved and consistent top-tier rankings. I'm always
-                  eager to learn, explore new technologies, and build products
-                  that make a difference.
+                  I'm always eager to learn new technologies and build products
+                  that make a meaningful difference, thriving on turning
+                  innovative ideas into scalable solutions.
                 </p>
               </div>
 
@@ -101,21 +98,6 @@ const About = () => {
                 {expanded ? "See Less" : "See More"}
               </button>
             </div>
-
-            {/* <div className="flex flex-wrap gap-4">
-              <span className="px-6 py-3 gradient-border rounded-full text-red-300 text-sm font-medium hover-glow transition-all duration-300">
-                React.js
-              </span>
-              <span className="px-6 py-3 gradient-border rounded-full text-yellow-600 text-sm font-medium hover-glow transition-all duration-300">
-                Node.js
-              </span>
-              <span className="px-6 py-3 gradient-border rounded-full text-orange-300 text-sm font-medium hover-glow transition-all duration-300">
-                MongoDB
-              </span>
-              <span className="px-6 py-3 gradient-border rounded-full text-amber-300 text-sm font-medium hover-glow transition-all duration-300">
-                Express.js
-              </span>
-            </div> */}
           </div>
 
           <div className="grid grid-cols-2 gap-6">
